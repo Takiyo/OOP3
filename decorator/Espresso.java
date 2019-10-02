@@ -1,3 +1,4 @@
+// One of many beverages with a unique cost and a set description.
 public class Espresso extends Beverage {
   
 	public Espresso() {

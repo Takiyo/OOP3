@@ -1,6 +1,10 @@
+// Flow of control starts here.
 public class StarbuzzCoffee {
  
 	public static void main(String args[]) {
+
+		// Creates different base beverages with unique decorators, then prints out their description (base beverage and all decorators)
+		// and cost (summed from base beverage and all decorators).
 		Beverage beverage = new Espresso();
 		System.out.println(beverage.getDescription() 
 				+ " $" + beverage.cost());

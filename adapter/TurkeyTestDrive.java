@@ -1,3 +1,5 @@
+// Flow of control begins here for testing turkeys and
+// the adapter that converts duck to turkey.
 public class TurkeyTestDrive {
 	public static void main(String[] args) {
 		MallardDuck duck = new MallardDuck();

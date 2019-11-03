@@ -20,22 +20,24 @@ public class MenuItem extends MenuComponent {
 		this.price = price;
 	}
   
+	// Get properties just return passed in values.
 	public String getName() {
 		return name;
 	}
-  
 	public String getDescription() {
 		return description;
 	}
-  
 	public double getPrice() {
 		return price;
 	}
-  
+
+	// To signify if an item is vegetarian, only applicable to menu items and not
+	// all menu components, because a component could be a menu itself.
 	public boolean isVegetarian() {
 		return vegetarian;
 	}
 
+	// Returns nulliterator because this component will not have child elements.
 	public Iterator<MenuComponent> createIterator() {
 		return new NullIterator();
 	}

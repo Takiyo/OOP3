@@ -9,7 +9,7 @@ public class CompositeIterator implements Iterator<MenuComponent> {
 		stack.push(iterator);
 	}
    
-	public Object next() { // TODO change return back to menucomponent?
+	public MenuComponent next() {
 		if (hasNext()) {
 			Iterator<MenuComponent> iterator = stack.peek();
 			MenuComponent component = iterator.next();

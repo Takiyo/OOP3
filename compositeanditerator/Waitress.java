@@ -1,6 +1,7 @@
 import java.util.Iterator;
 
-//  
+// Waitress class can take a menu component respresenting all menus and
+// print them to the console using their built in print methods.
 public class Waitress {
 	MenuComponent allMenus;
  

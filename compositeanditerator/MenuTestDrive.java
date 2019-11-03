@@ -110,8 +110,8 @@ public class MenuTestDrive {
         // Pass waitress all created menus with their sub-menus and menuitems.
 		Waitress waitress = new Waitress(allMenus);
    
+		waitress.printMenu();
 		waitress.printVegetarianMenu();
-		//waitress.printMenu();
  
 	}
 }

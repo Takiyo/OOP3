@@ -1,7 +1,11 @@
 import java.util.*;
 
+// Represents a component in the menu that can be a Menu (has children)
+// and a MenuItem (no children).
 public abstract class MenuComponent {
    
+	// Thrown exceptions are default behavior. For example, if a menu item
+	// tries to use getChild it will throw the exception.
 	public void add(MenuComponent menuComponent) {
 		throw new UnsupportedOperationException();
 	}

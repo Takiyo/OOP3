@@ -22,19 +22,21 @@ public class Menu extends MenuComponent {
 		menuComponents.remove(menuComponent);
 	}
  
+	// Gets the amount of children this menu has. Can be more menus or menuitems.
 	public MenuComponent getChild(int i) {
 		return menuComponents.get(i);
 	}
  
+	// Get properties just return passed in values.
 	public String getName() {
 		return name;
 	}
- 
 	public String getDescription() {
 		return description;
 	}
 
   
+	// Only creates an iterator if one does not already exist.
 	public Iterator<MenuComponent> createIterator() {
 		if (iterator == null) {
 			iterator = new CompositeIterator(menuComponents.iterator());
